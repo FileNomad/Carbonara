@@ -1,0 +1,21 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build",
+            "type": "shell",
+            "windows":
+            {
+                "command": "pwsh -Command \"./script/build.bat\""
+            },
+            "linux":
+            {
+                "command": "./script/build.sh",
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
